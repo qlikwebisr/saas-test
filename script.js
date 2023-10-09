@@ -29,7 +29,7 @@ function login() {
 
 }
 
-login().then(() => {
+//login().then(() => {
 
   require.config( {
     baseUrl: ( settings.config.isSecure ? "https://" : "http://" ) + settings.config.host + (settings.config.port ? ":" + settings.config.port : "") + settings.config.prefix + "resources",
@@ -52,7 +52,7 @@ login().then(() => {
       app.getObject("qv2", "zAsXNT");
   });
 
-});
+//});
 
 
 
