@@ -1,0 +1,41 @@
+/* Main CSS file */
+/* @media screen and (max-width:768px) { */
+ /* base styling */
+ /* Box Model */
+* {
+	box-sizing: border-box;
+}
+:root{
+    --white:#FFF;
+    --black:#000;
+    --font-stack: Tahoma, Verdana, sans-serif;
+}
+
+html{
+	font-size: 12px;
+    font-family: var(--font-stack);
+}
+html, body {
+    height:100%;
+	margin:0;
+	padding:0;
+}
+.container{
+    width:100%;
+    padding:20px;
+}
+.qvobject{
+    height:400px;
+    width:50%;
+    padding: 5px;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+@media screen and (max-width:568px){
+    .qvobject{
+        height:300px;
+        width:100%;
+    }
+}
